@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-### [Visit us ➡️ ChillsBay](https://chillsbay-kazimorwan498.netlify.app/)
+### [Visit us ➡️ ChillsBay](https://chillsbay-kazimorwan498.vercel.app/)
 
 ## 💫 About Me
 
