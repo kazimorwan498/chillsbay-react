@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
 	Navbar,
 	NavbarBrand,
@@ -15,7 +16,6 @@ import {
 	Button,
 	Link,
 } from "@heroui/react";
-import { useState } from "react";
 
 export default function MyNavbar() {
 	const [IsMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function MyNavbar() {
 	];
 
 	return (
-		<section className="h-auto md:h-[100px] flex py-2">
+		<section className="h-[100px] flex py-2">
 			<Navbar
 				isMenuOpen={IsMenuOpen}
 				onMenuOpenChange={setIsMenuOpen}
@@ -37,7 +37,7 @@ export default function MyNavbar() {
 				maxWidth="2xl"
 			>
 				{/* For Large Screen Device */}
-				<NavbarContent className="sm:hidden">
+				<NavbarContent className="900px:hidden min-w-[160px]">
 					<NavbarBrand>
 						<img
 							className="cursor-pointer"
@@ -47,15 +47,15 @@ export default function MyNavbar() {
 					</NavbarBrand>
 				</NavbarContent>
 
-				<NavbarContent className="sm:hidden pr-3" justify="end">
+				<NavbarContent className="900px:hidden pr-3" justify="end">
 					<NavbarMenuToggle
 						aria-level={IsMenuOpen ? "Close menu" : "Open menu"}
-						className="cursor-pointer w-10"
-					></NavbarMenuToggle>
+						className="cursor-pointer w-10 rounded-md"
+					/>
 				</NavbarContent>
 
 				{/* For Large Screen Device */}
-				<NavbarContent className="hidden sm:flex gap-4 w-full justify-center">
+				<NavbarContent className="hidden 900px:flex gap-4 w-full justify-center">
 					<NavbarBrand>
 						<img
 							className="cursor-pointer"
@@ -65,11 +65,13 @@ export default function MyNavbar() {
 					</NavbarBrand>
 
 					<NavbarItem className="cursor-pointer">
-						<Link className="text-secondary">Eat & Drink</Link>
+						<Link className="text-accent bg-inherit rounded-md">
+							Eat & Drink
+						</Link>
 					</NavbarItem>
 
 					<NavbarItem className="cursor-pointer">
-						<Link className="text-secondary relative w-[60px]">
+						<Link className="text-accent relative w-[60px] bg-inherit rounded-md">
 							Club{" "}
 							<span className="bg-primary inline-flex items-center justify-center text-white font-bold h-[17px] w-[42px] rounded-full text-[10px] uppercase absolute bottom-5 right-0">
 								<img
@@ -84,15 +86,15 @@ export default function MyNavbar() {
 
 					<NavbarItem>
 						<Link>
-							<Dropdown>
+							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
 								<DropdownTrigger>
 									<Button
 										variant="none"
-										className="cursor-pointer rounded-lg text-secondary"
+										className="cursor-pointer rounded-md text-accent"
 									>
 										Things to do
 										<svg
-											dataSlot="icon"
+											data-slot="icon"
 											fill="none"
 											strokeWidth={1.5}
 											stroke="currentColor"
@@ -109,20 +111,17 @@ export default function MyNavbar() {
 										</svg>
 									</Button>
 								</DropdownTrigger>
-								<DropdownMenu
-									aria-label="Things to do"
-									className="shadow-lg rounded-md p-2 ring ring-secondary/30 hover:ring-primary/50 active:ring-primary/70 transform-content"
-								>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+								<DropdownMenu aria-label="Things to do">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										Water Sports
 									</DropdownItem>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										Day Parties
 									</DropdownItem>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										Outdoors
 									</DropdownItem>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										Rentals
 									</DropdownItem>
 								</DropdownMenu>
@@ -138,29 +137,26 @@ export default function MyNavbar() {
 
 					<NavbarItem>
 						<Link>
-							<Dropdown>
+							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
 								<DropdownTrigger>
 									<Button
 										variant="none"
-										className="cursor-pointer rounded-lg"
+										className="cursor-pointer rounded-md"
 									>
 										<img src="/user.svg" alt="user" />
-										<span className="text-secondary">
+										<span className="text-accent">
 											Account
 										</span>
 									</Button>
 								</DropdownTrigger>
-								<DropdownMenu
-									aria-label="profile"
-									className="shadow-lg rounded-md p-2 ring ring-secondary/30 hover:ring-primary/50 active:ring-primary/70 transform-content"
-								>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+								<DropdownMenu aria-label="profile">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										My Profile
 									</DropdownItem>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										My History
 									</DropdownItem>
-									<DropdownItem className="hover:bg-primary/10 active:bg-primary/20 rounded-md transition-colors">
+									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
 										Sign Out
 									</DropdownItem>
 								</DropdownMenu>
@@ -169,11 +165,25 @@ export default function MyNavbar() {
 					</NavbarItem>
 
 					<NavbarItem>
-						<Button variant="solid" color="primary">
+						<Button
+							variant="solid"
+							color="primary"
+							className="w-[130px] h-9 rounded-md"
+						>
 							Contact Now
 						</Button>
 					</NavbarItem>
 				</NavbarContent>
+
+				<NavbarMenu className="mt-7 bg-[rgb(245,250,255)]">
+					{menuItem.map((item, index) => (
+						<NavbarMenuItem key={index}>
+							<Link className="px-3 py-1.5 w-full text-lg text-accent hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors cursor-pointer !opacity-100">
+								{item}
+							</Link>
+						</NavbarMenuItem>
+					))}
+				</NavbarMenu>
 			</Navbar>
 		</section>
 	);

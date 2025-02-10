@@ -1,4 +1,4 @@
-import { heroui } from "@heroui/react";
+const { heroui } = require("@heroui/react");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -11,7 +11,11 @@ export default {
 		extend: {
 			colors: {
 				primary: "rgb(14, 139, 255)",
-				secondary: "rgb(38, 57, 92)",
+				secondary: "rgb(214,235,253)",
+				accent: "rgb(38, 57, 92)",
+			},
+			screens: {
+				"900px": "900px",
 			},
 		},
 	},
