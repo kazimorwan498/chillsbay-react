@@ -16,21 +16,19 @@ import {
 	Button,
 	Link,
 } from "@heroui/react";
+import {
+	AccountItems,
+	MobileNavItems,
+	ThingsToDoItems,
+} from "../lib/NavbarData";
 
 export default function MyNavbar() {
 	const [IsMenuOpen, setIsMenuOpen] = useState(false);
-	const menuItem = [
-		"Eat & Drink",
-		"Club",
-		"Things to do",
-		"Shoping",
-		"Account",
-		"Contact",
-	];
 
 	return (
 		<section className="h-[100px] flex py-2">
 			<Navbar
+				shouldHideOnScroll
 				isMenuOpen={IsMenuOpen}
 				onMenuOpenChange={setIsMenuOpen}
 				className="w-full"
@@ -47,7 +45,7 @@ export default function MyNavbar() {
 					</NavbarBrand>
 				</NavbarContent>
 
-				<NavbarContent className="900px:hidden pr-3" justify="end">
+				<NavbarContent className="900px:hidden sm:pr-3" justify="end">
 					<NavbarMenuToggle
 						aria-level={IsMenuOpen ? "Close menu" : "Open menu"}
 						className="cursor-pointer w-10 rounded-md"
@@ -88,11 +86,11 @@ export default function MyNavbar() {
 						<Link>
 							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
 								<DropdownTrigger>
-									<Button
+									<Link
 										variant="none"
-										className="cursor-pointer rounded-md text-accent"
+										className="cursor-pointer rounded-md text-accent !text-base space-x-2"
 									>
-										Things to do
+										<span>Things to do</span>
 										<svg
 											data-slot="icon"
 											fill="none"
@@ -109,21 +107,17 @@ export default function MyNavbar() {
 												d="m19.5 8.25-7.5 7.5-7.5-7.5"
 											/>
 										</svg>
-									</Button>
+									</Link>
 								</DropdownTrigger>
 								<DropdownMenu aria-label="Things to do">
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										Water Sports
-									</DropdownItem>
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										Day Parties
-									</DropdownItem>
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										Outdoors
-									</DropdownItem>
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										Rentals
-									</DropdownItem>
+									{ThingsToDoItems.map((item, index) => (
+										<DropdownItem
+											className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+											key={index}
+										>
+											{item}
+										</DropdownItem>
+									))}
 								</DropdownMenu>
 							</Dropdown>
 						</Link>
@@ -139,26 +133,25 @@ export default function MyNavbar() {
 						<Link>
 							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
 								<DropdownTrigger>
-									<Button
+									<Link
 										variant="none"
-										className="cursor-pointer rounded-md"
+										className="cursor-pointer rounded-md !text-base space-x-2"
 									>
 										<img src="/user.svg" alt="user" />
 										<span className="text-accent">
 											Account
 										</span>
-									</Button>
+									</Link>
 								</DropdownTrigger>
 								<DropdownMenu aria-label="profile">
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										My Profile
-									</DropdownItem>
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										My History
-									</DropdownItem>
-									<DropdownItem className="hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors">
-										Sign Out
-									</DropdownItem>
+									{AccountItems.map((item, index) => (
+										<DropdownItem
+											className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+											key={index}
+										>
+											{item}
+										</DropdownItem>
+									))}
 								</DropdownMenu>
 							</Dropdown>
 						</Link>
@@ -168,7 +161,7 @@ export default function MyNavbar() {
 						<Button
 							variant="solid"
 							color="primary"
-							className="w-[130px] h-9 rounded-md"
+							className="w-[130px] h-9 rounded-md ms-[43px]"
 						>
 							Contact Now
 						</Button>
@@ -176,7 +169,7 @@ export default function MyNavbar() {
 				</NavbarContent>
 
 				<NavbarMenu className="mt-7 bg-[rgb(245,250,255)]">
-					{menuItem.map((item, index) => (
+					{MobileNavItems.map((item, index) => (
 						<NavbarMenuItem key={index}>
 							<Link className="px-3 py-1.5 w-full text-lg text-accent hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors cursor-pointer !opacity-100">
 								{item}

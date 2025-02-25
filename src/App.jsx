@@ -1,10 +1,13 @@
-import "./App.css";
+import Hero from "./Components/Hero";
 import MyNavbar from "./Components/Navbar";
 
 function App() {
 	return (
 		<>
-			<MyNavbar />
+			<main className="max-w-[1440px] mx-auto">
+				<MyNavbar />
+				<Hero />
+			</main>
 		</>
 	);
 }

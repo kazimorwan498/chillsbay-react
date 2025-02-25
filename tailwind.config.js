@@ -17,6 +17,12 @@ export default {
 			screens: {
 				"900px": "900px",
 			},
+			fontFamily: {
+				RedHat: "Red Hat Display,serif",
+			},
+			borderRadius: {
+				"8px": "8px",
+			},
 		},
 	},
 	darkMode: "class",
