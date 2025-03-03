@@ -20,13 +20,14 @@ import {
 	AccountItems,
 	MobileNavItems,
 	ThingsToDoItems,
-} from "../lib/NavbarData";
+} from "../../lib/Data.json";
+import { Link as LinkRRD } from "react-router-dom";
 
 export default function MyNavbar() {
 	const [IsMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<section className="h-[100px] flex py-2">
+		<section className="h-[100px] flex py-2 max-w-[1440px] mx-auto">
 			<Navbar
 				shouldHideOnScroll
 				isMenuOpen={IsMenuOpen}
@@ -63,13 +64,13 @@ export default function MyNavbar() {
 					</NavbarBrand>
 
 					<NavbarItem className="cursor-pointer">
-						<Link className="text-accent bg-inherit rounded-md">
+						<LinkRRD className="text-accent bg-inherit rounded-md">
 							Eat & Drink
-						</Link>
+						</LinkRRD>
 					</NavbarItem>
 
 					<NavbarItem className="cursor-pointer">
-						<Link className="text-accent relative w-[60px] bg-inherit rounded-md">
+						<LinkRRD className="text-accent relative w-[60px] bg-inherit rounded-md">
 							Club{" "}
 							<span className="bg-primary inline-flex items-center justify-center text-white font-bold h-[17px] w-[42px] rounded-full text-[10px] uppercase absolute bottom-5 right-0">
 								<img
@@ -79,7 +80,7 @@ export default function MyNavbar() {
 								/>
 								Hot
 							</span>
-						</Link>
+						</LinkRRD>
 					</NavbarItem>
 
 					<NavbarItem>
@@ -110,14 +111,18 @@ export default function MyNavbar() {
 									</Link>
 								</DropdownTrigger>
 								<DropdownMenu aria-label="Things to do">
-									{ThingsToDoItems.map((item, index) => (
-										<DropdownItem
-											className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
-											key={index}
-										>
-											{item}
-										</DropdownItem>
-									))}
+									{ThingsToDoItems.map(
+										({ items, path }, index) => (
+											<DropdownItem
+												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+												key={index}
+											>
+												<LinkRRD to={path} className="block">
+													{items}
+												</LinkRRD>
+											</DropdownItem>
+										)
+									)}
 								</DropdownMenu>
 							</Dropdown>
 						</Link>
@@ -144,14 +149,18 @@ export default function MyNavbar() {
 									</Link>
 								</DropdownTrigger>
 								<DropdownMenu aria-label="profile">
-									{AccountItems.map((item, index) => (
-										<DropdownItem
-											className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
-											key={index}
-										>
-											{item}
-										</DropdownItem>
-									))}
+									{AccountItems.map(
+										({ items, path }, index) => (
+											<DropdownItem
+												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+												key={index}
+											>
+												<LinkRRD to={path} className="block">
+													{items}
+												</LinkRRD>
+											</DropdownItem>
+										)
+									)}
 								</DropdownMenu>
 							</Dropdown>
 						</Link>
@@ -169,11 +178,15 @@ export default function MyNavbar() {
 				</NavbarContent>
 
 				<NavbarMenu className="mt-7 bg-[rgb(245,250,255)]">
-					{MobileNavItems.map((item, index) => (
+					{MobileNavItems.map(({ items, path }, index) => (
 						<NavbarMenuItem key={index}>
-							<Link className="px-3 py-1.5 w-full text-lg text-accent hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors cursor-pointer !opacity-100">
-								{item}
-							</Link>
+							<LinkRRD
+								to={path}
+								className="px-3 py-1.5 block text-lg text-accent hover:!bg-secondary active:bg-primary/30 rounded-md transition-colors cursor-pointer !opacity-100"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								{items}
+							</LinkRRD>
 						</NavbarMenuItem>
 					))}
 				</NavbarMenu>

@@ -1,14 +1,17 @@
-import Hero from "./Components/Hero";
-import MyNavbar from "./Components/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MyNavbar from "./Components/Global/Navbar";
+import HomePage from "./Components/HomePage";
+import ErrorPage from "./Components/Global/ErrorPage";
 
 function App() {
 	return (
-		<>
-			<main className="max-w-[1440px] mx-auto">
-				<MyNavbar />
-				<Hero />
-			</main>
-		</>
+		<BrowserRouter>
+			<MyNavbar />
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="*" element={<ErrorPage />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 

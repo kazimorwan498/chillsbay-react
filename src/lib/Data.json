@@ -1,0 +1,60 @@
+{
+    "ThingsToDoItems": [
+        {
+            "items": "Water Sports",
+            "path": "water-sports"
+        },
+        {
+            "items": "Day Parties",
+            "path": "day-parties"
+        },
+        {
+            "items": "Outdoors",
+            "path": "outdoors"
+        },
+        {
+            "items": "Rentals",
+            "path": "rentals"
+        }
+    ],
+    "AccountItems": [
+        {
+            "items": "My Profile",
+            "path": "profile"
+        },
+        {
+            "items": "My History",
+            "path": "history"
+        },
+        {
+            "items": "Sign Out",
+            "path": "signout"
+        }
+    ],
+    "MobileNavItems": [
+        {
+            "items": "Eat & Drink",
+            "path": "eat-drink"
+        },
+        {
+            "items": "Club",
+            "path": "club"
+        },
+        {
+            "items": "Things to do",
+            "path": "things-to-do"
+        },
+        {
+            "items": "Shoping",
+            "path": "shoping"
+        },
+        {
+            "items": "Account",
+            "path": "account"
+        },
+        {
+            "items": "Contact",
+            "path": "contact"
+        }
+    ]
+}
