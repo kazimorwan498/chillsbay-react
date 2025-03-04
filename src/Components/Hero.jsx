@@ -42,12 +42,12 @@ export default function Hero() {
 			className="bg-no-repeat bg-left-top w-full px-4 sm:px-12 900px:ps-[100px] pt-10 sm:pt-14 900px:pt-20 pb-16 sm:pb-[100px] 900px:pb-[180px] space-y-10 bg-cover transition-all relative"
 			style={{ backgroundImage: `url(${BgImgs})` }}
 		>
-			<div className="absolute bottom-4 flex items-center justify-center gap-4 left-1/2 -translate-x-1/2">
+			<div className="absolute bottom-4 flex items-center justify-center gap-2.5 sm:gap-4 left-1/2 -translate-x-1/2">
 				{HeroCarousel.map((_, i) => (
 					<button
 						onClick={() => setCurrentIndex(i)}
 						className={cn(
-							"size-4 rounded-full transition-colors",
+							"size-2.5 sm:size-4 rounded-full transition-colors",
 							currentIndex === i
 								? "bg-[rgb(23,34,55)]"
 								: "bg-[rgb(90,94,102)]"

@@ -38,11 +38,13 @@ export default function MyNavbar() {
 				{/* For Large Screen Device */}
 				<NavbarContent className="900px:hidden min-w-[160px]">
 					<NavbarBrand>
-						<img
-							className="cursor-pointer"
-							src="/logo.svg"
-							alt="Logo"
-						/>
+						<LinkRRD to="/">
+							<img
+								className="cursor-pointer"
+								src="/logo.svg"
+								alt="Logo"
+							/>
+						</LinkRRD>
 					</NavbarBrand>
 				</NavbarContent>
 
@@ -56,21 +58,29 @@ export default function MyNavbar() {
 				{/* For Large Screen Device */}
 				<NavbarContent className="hidden 900px:flex gap-4 w-full justify-center">
 					<NavbarBrand>
-						<img
-							className="cursor-pointer"
-							src="/logo.svg"
-							alt="Logo"
-						/>
+						<LinkRRD to="/">
+							<img
+								className="cursor-pointer"
+								src="/logo.svg"
+								alt="Logo"
+							/>
+						</LinkRRD>
 					</NavbarBrand>
 
 					<NavbarItem className="cursor-pointer">
-						<LinkRRD className="text-accent bg-inherit rounded-md">
+						<LinkRRD
+							to="/eat-drink"
+							className="text-accent bg-inherit rounded-md"
+						>
 							Eat & Drink
 						</LinkRRD>
 					</NavbarItem>
 
 					<NavbarItem className="cursor-pointer">
-						<LinkRRD className="text-accent relative w-[60px] bg-inherit rounded-md">
+						<LinkRRD
+							to="/club"
+							className="text-accent relative w-[60px] bg-inherit rounded-md"
+						>
 							Club{" "}
 							<span className="bg-primary inline-flex items-center justify-center text-white font-bold h-[17px] w-[42px] rounded-full text-[10px] uppercase absolute bottom-5 right-0">
 								<img
@@ -117,7 +127,10 @@ export default function MyNavbar() {
 												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
 												key={index}
 											>
-												<LinkRRD to={path} className="block">
+												<LinkRRD
+													to={path}
+													className="block"
+												>
 													{items}
 												</LinkRRD>
 											</DropdownItem>
@@ -129,9 +142,9 @@ export default function MyNavbar() {
 					</NavbarItem>
 
 					<NavbarItem className="cursor-pointer">
-						<Link>
+						<LinkRRD to="/cart">
 							<img src="/cart.svg" alt="cart" />
-						</Link>
+						</LinkRRD>
 					</NavbarItem>
 
 					<NavbarItem>
@@ -155,7 +168,10 @@ export default function MyNavbar() {
 												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
 												key={index}
 											>
-												<LinkRRD to={path} className="block">
+												<LinkRRD
+													to={path}
+													className="block"
+												>
 													{items}
 												</LinkRRD>
 											</DropdownItem>
