@@ -62,5 +62,15 @@
 		{ "img": "/mood2.png", "title": "Events" },
 		{ "img": "/mood3.png", "title": "Club" },
 		{ "img": "/mood4.png", "title": "Things to do" }
+	],
+	"ThingsImages": [
+		{ "img": "/things1.png", "title": "Sight Seeing" },
+		{ "img": "/things2.png", "title": "Volley Ball Game" },
+		{ "img": "/things3.png", "title": "Wizkid Show" },
+		{ "img": "/things3.png", "title": "Wizkid Show" },
+		{ "img": "/things1.png", "title": "Sight Seeing" },
+		{ "img": "/things2.png", "title": "Volley Ball Game" },
+		{ "img": "/things3.png", "title": "Wizkid Show" },
+		{ "img": "/things3.png", "title": "Wizkid Show" }
 	]
 }
