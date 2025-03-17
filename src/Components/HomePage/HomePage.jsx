@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import MoodSect from "./MoodSect";
 import ThingsSect from "./ThingsSect";
 import UseSect from "./UseSect";
+import ChillingSect from "./ChillingSect/ChillingSect";
 
 export default function HomePage() {
 	return (
@@ -12,7 +13,10 @@ export default function HomePage() {
 				<MoodSect />
 			</div>
 			<ThingsSect />
-			<UseSect />
+			<div className="max-w-[1440px] mx-auto">
+				<UseSect />
+				<ChillingSect />
+			</div>
 		</section>
 	);
 }

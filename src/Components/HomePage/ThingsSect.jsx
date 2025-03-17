@@ -1,6 +1,6 @@
 import React from "react";
-import MyHeading from "./Global/MyHeading";
-import { ThingsImages } from "../lib/Data.json";
+import MyHeading from "../Global/MyHeading";
+import { ThingsImages } from "../../lib/Data.json";
 
 export default function ThingsSect() {
 	return (

@@ -1,6 +1,6 @@
 import React from "react";
-import MyHeading from "./Global/MyHeading";
-import { MoodImage } from "../lib/Data.json";
+import MyHeading from "../Global/MyHeading";
+import { MoodImage } from "../../lib/Data.json";
 
 export default function MoodSect() {
 	return (

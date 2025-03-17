@@ -58,20 +58,56 @@
 		}
 	],
 	"MoodImage": [
-		{ "img": "/mood1.png", "title": "Eat & Drink" },
-		{ "img": "/mood2.png", "title": "Events" },
-		{ "img": "/mood3.png", "title": "Club" },
-		{ "img": "/mood4.png", "title": "Things to do" }
+		{
+			"img": "/mood1.png",
+			"title": "Eat & Drink"
+		},
+		{
+			"img": "/mood2.png",
+			"title": "Events"
+		},
+		{
+			"img": "/mood3.png",
+			"title": "Club"
+		},
+		{
+			"img": "/mood4.png",
+			"title": "Things to do"
+		}
 	],
 	"ThingsImages": [
-		{ "img": "/things1.png", "title": "Sight Seeing" },
-		{ "img": "/things2.png", "title": "Volley Ball Game" },
-		{ "img": "/things3.png", "title": "Wizkid Show" },
-		{ "img": "/things3.png", "title": "Wizkid Show" },
-		{ "img": "/things1.png", "title": "Sight Seeing" },
-		{ "img": "/things2.png", "title": "Volley Ball Game" },
-		{ "img": "/things3.png", "title": "Wizkid Show" },
-		{ "img": "/things3.png", "title": "Wizkid Show" }
+		{
+			"img": "/things1.png",
+			"title": "Sight Seeing"
+		},
+		{
+			"img": "/things2.png",
+			"title": "Volley Ball Game"
+		},
+		{
+			"img": "/things3.png",
+			"title": "Wizkid Show"
+		},
+		{
+			"img": "/things3.png",
+			"title": "Wizkid Show"
+		},
+		{
+			"img": "/things1.png",
+			"title": "Sight Seeing"
+		},
+		{
+			"img": "/things2.png",
+			"title": "Volley Ball Game"
+		},
+		{
+			"img": "/things3.png",
+			"title": "Wizkid Show"
+		},
+		{
+			"img": "/things3.png",
+			"title": "Wizkid Show"
+		}
 	],
 	"UseImages": [
 		{
@@ -91,6 +127,35 @@
 			"title": "Free Cancellation and ticket transfer",
 			"des": "Resell your tickets or cancel your reservations at zero cost 24 hours before.",
 			"desMaxWidth": "358.69px"
+		}
+	],
+	"ChillingImages": [
+		{
+			"img": "/chilling1.png",
+			"title": "Wizkid made in lagos tour",
+			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+			"date": "Jun 12 2025",
+			"time": "9:00 PM",
+			"location": "tbs lagos",
+			"price": "N20,000"
+		},
+		{
+			"img": "/chilling2.png",
+			"title": "Wizkid made in lagos tour",
+			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+			"date": "Jun 12 2025",
+			"time": "9:00 PM",
+			"location": "tbs lagos",
+			"price": "N20,000"
+		},
+		{
+			"img": "/chilling3.png",
+			"title": "Wizkid made in lagos tour",
+			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+			"date": "Jun 12 2025",
+			"time": "9:00 PM",
+			"location": "tbs lagos",
+			"price": "N20,000"
 		}
 	]
 }

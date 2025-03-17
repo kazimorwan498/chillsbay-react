@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyNavbar from "./Components/Global/Navbar";
-import HomePage from "./Components/HomePage";
+import HomePage from "./Components/HomePage/HomePage";
 import ErrorPage from "./Components/Global/ErrorPage";
 
 function App() {

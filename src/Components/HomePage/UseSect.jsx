@@ -1,15 +1,15 @@
 import React from "react";
-import MyHeading from "./Global/MyHeading";
-import { UseImages } from "../lib/Data.json";
+import MyHeading from "../Global/MyHeading";
+import { UseImages } from "../../lib/Data.json";
 
 export default function UseSect() {
 	return (
-		<section className="pt-[68px] pb-[50px] px-5 max-w-[1440px] mx-auto">
+		<section className="pt-[68px] pb-[50px] px-5">
 			<MyHeading className="sm:leading-[42px]">
 				Why Use Chillsbay?
 			</MyHeading>
 
-			<div className="bg-primary/5 max-w-[1240px] mx-auto mt-10 shadow-lg sm:pt-[62px] py-3 sm:pb-[57px] px-2 sm:px-10 flex flex-wrap items-center justify-center md:justify-between">
+			<div className="bg-primary/5 max-w-[1240px] mx-auto mt-10 shadow-xl rounded-sm sm:pt-[62px] py-3 sm:pb-[57px] px-2 sm:px-10 flex flex-wrap items-center justify-center md:justify-between">
 				{UseImages.map(({ img, title, des, desMaxWidth }, i) => (
 					<div
 						key={i}
