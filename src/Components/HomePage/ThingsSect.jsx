@@ -14,6 +14,7 @@ export default function ThingsSect() {
 					{ThingsImages.map(({ img, title }, i) => (
 						<div className="w-[295px] h-[309px]" key={i}>
 							<img
+								loading="lazy"
 								className="rounded-[20px]"
 								src={img}
 								alt="Things"

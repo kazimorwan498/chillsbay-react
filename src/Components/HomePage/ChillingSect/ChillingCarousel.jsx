@@ -40,7 +40,7 @@ export default function ChillingCarousel() {
 
 								<div className="grid grid-cols-2 items-center justify-between gap-y-6 mt-[30px]">
 									<div className="flex gap-3">
-										<img
+										<img loading="lazy"
 											src="/calender.svg"
 											alt="calender"
 										/>

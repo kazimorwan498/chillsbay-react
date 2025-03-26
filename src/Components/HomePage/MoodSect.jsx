@@ -12,7 +12,7 @@ export default function MoodSect() {
 			<div className="flex flex-wrap items-center justify-center gap-y-3 sm:gap-y-5">
 				{MoodImage.map(({ img, title }, i) => (
 					<div key={i}>
-						<img src={img} alt="Mood" />
+						<img loading="lazy" src={img} alt="Mood" />
 						<h3 className="text-center text-xl sm:text-2xl md:text-[32px] font-bold leading-[38px] mt-3">
 							{title}
 						</h3>
