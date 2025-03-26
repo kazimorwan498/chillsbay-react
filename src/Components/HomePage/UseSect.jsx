@@ -16,6 +16,7 @@ export default function UseSect() {
 						className="flex flex-col items-center justify-center max-w-[360px]"
 					>
 						<img
+							loading="lazy"
 							className="size-[128px] mb-4"
 							src={img}
 							alt="Use"
