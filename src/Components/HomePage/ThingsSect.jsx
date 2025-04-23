@@ -1,6 +1,7 @@
 import React from "react";
 import MyHeading from "../Global/MyHeading";
 import { ThingsImages } from "../../lib/Data.json";
+import { Link } from "react-router-dom";
 
 export default function ThingsSect() {
 	return (
@@ -13,15 +14,17 @@ export default function ThingsSect() {
 				<div className="flex flex-wrap items-center justify-center gap-5 sm:gap-y-10">
 					{ThingsImages.map(({ img, title }, i) => (
 						<div className="w-[295px] h-[309px]" key={i}>
-							<img
-								loading="lazy"
-								className="rounded-[20px]"
-								src={img}
-								alt="Things"
-							/>
-							<h3 className="text-center text-lg sm:text-xl md:text-[22px] font-bold leading-[27px] mt-3">
-								{title}
-							</h3>
+							<Link to="/cards">
+								<img
+									loading="lazy"
+									className="rounded-[20px]"
+									src={img}
+									alt="Things"
+								/>
+								<h3 className="text-center text-lg sm:text-xl md:text-[22px] font-bold leading-[27px] mt-3">
+									{title}
+								</h3>
+							</Link>
 						</div>
 					))}
 				</div>

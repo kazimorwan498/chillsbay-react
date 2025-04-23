@@ -14,33 +14,36 @@ export default function ChillingCarousel() {
 		slidesToScroll: 1,
 	};
 	return (
-		<section className="max-w-[1251px] mx-auto px-2.5">
-			<Slider {...settings} className="!relative">
+		<section className="xl:max-w-[1251px] mx-auto">
+			<Slider {...settings} className="!relative !space-x-2">
 				{ChillingImages.map(
 					(
 						{ img, title, des, date, location, time, price },
 						index
 					) => (
 						<div
-							className="!flex gap-[30px] max-w-[1027px] mx-auto"
+							className="!flex flex-col lg:flex-row lg:gap-[30px] max-w-[1027px] mx-auto"
 							key={index}
 						>
-							<img
-								className="rounded-[18px]"
-								src={img}
-								alt="chilling"
-							/>
-							<div className="pt-4 max-w-[385px]">
-								<h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold !leading-[54px]">
+							<div className="flex items-center justify-center">
+								<img
+									className="rounded-[18px] sm:max-w-[400px] md:max-w-[473px]"
+									src={img}
+									alt="chilling"
+								/>
+							</div>
+							<div className="pt-4 sm:max-w-[400px] md:max-w-[473px] xl:max-w-[385px] mx-auto">
+								<h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold xl:!leading-[54px]">
 									{title}
 								</h3>
-								<p className="text-xl leading-[30px] mt-5">
+								<p className="text-base sm:text-lg lg:text-xl sm:leading-[30px] mt-2.5 md:mt-5">
 									{des}
 								</p>
 
 								<div className="grid grid-cols-2 items-center justify-between gap-y-6 mt-[30px]">
 									<div className="flex gap-3">
-										<img loading="lazy"
+										<img
+											loading="lazy"
 											src="/calender.svg"
 											alt="calender"
 										/>
@@ -71,7 +74,7 @@ export default function ChillingCarousel() {
 									</div>
 								</div>
 
-								<div className="flex items-center justify-between gap-4 mt-6">
+								<div className="flex items-center gap-4 mt-6">
 									<Button
 										variant="bordered"
 										color="primary"

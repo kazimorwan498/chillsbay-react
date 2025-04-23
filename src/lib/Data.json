@@ -157,5 +157,6 @@
 			"location": "tbs lagos",
 			"price": "N20,000"
 		}
-	]
+	],
+	"peopleImages": ["/people1.png", "/people2.png", "/people3.png", "/people4.png", "/people5.png", "/people6.png"]
 }

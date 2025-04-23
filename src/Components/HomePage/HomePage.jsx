@@ -4,6 +4,7 @@ import MoodSect from "./MoodSect";
 import ThingsSect from "./ThingsSect";
 import UseSect from "./UseSect";
 import ChillingSect from "./ChillingSect/ChillingSect";
+import PeopleSect from "./PeopleSect";
 
 export default function HomePage() {
 	return (
@@ -16,6 +17,7 @@ export default function HomePage() {
 			<div className="max-w-[1440px] mx-auto">
 				<UseSect />
 				<ChillingSect />
+				<PeopleSect />
 			</div>
 		</section>
 	);

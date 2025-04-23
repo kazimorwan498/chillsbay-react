@@ -188,7 +188,7 @@ export default function MyNavbar() {
 							color="primary"
 							className="w-[130px] h-9 rounded-md ms-[43px]"
 						>
-							Contact Now
+							<LinkRRD to="/contact-now">Contact Now</LinkRRD>
 						</Button>
 					</NavbarItem>
 				</NavbarContent>
