@@ -16,6 +16,7 @@ export default {
 			},
 			screens: {
 				"900px": "900px",
+				"400px": "400px",
 			},
 			fontFamily: {
 				RedHat: "Red Hat Display,serif",

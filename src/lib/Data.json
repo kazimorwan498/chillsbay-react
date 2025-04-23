@@ -134,29 +134,78 @@
 			"img": "/chilling1.png",
 			"title": "Wizkid made in lagos tour",
 			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-			"date": "Jun 12 2025",
-			"time": "9:00 PM",
-			"location": "tbs lagos",
-			"price": "N20,000"
+			"pDetails": [
+				{
+					"img": "/calender.svg",
+					"title": "Jun 12 2025"
+				},
+				{
+					"img": "/location.svg",
+					"title": "TBS Lagos"
+				},
+				{
+					"img": "/clock.svg",
+					"title": "9:00 PM"
+				},
+				{
+					"img": "/price.svg",
+					"title": "N20,000"
+				}
+			]
 		},
 		{
 			"img": "/chilling2.png",
 			"title": "Wizkid made in lagos tour",
 			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-			"date": "Jun 12 2025",
-			"time": "9:00 PM",
-			"location": "tbs lagos",
-			"price": "N20,000"
+			"pDetails": [
+				{
+					"img": "/calender.svg",
+					"title": "Jun 12 2025"
+				},
+				{
+					"img": "/location.svg",
+					"title": "TBS Lagos"
+				},
+				{
+					"img": "/clock.svg",
+					"title": "9:00 PM"
+				},
+				{
+					"img": "/price.svg",
+					"title": "N20,000"
+				}
+			]
 		},
 		{
 			"img": "/chilling3.png",
 			"title": "Wizkid made in lagos tour",
 			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-			"date": "Jun 12 2025",
-			"time": "9:00 PM",
-			"location": "tbs lagos",
-			"price": "N20,000"
+			"pDetails": [
+				{
+					"img": "/calender.svg",
+					"title": "Jun 12 2025"
+				},
+				{
+					"img": "/location.svg",
+					"title": "TBS Lagos"
+				},
+				{
+					"img": "/clock.svg",
+					"title": "9:00 PM"
+				},
+				{
+					"img": "/price.svg",
+					"title": "N20,000"
+				}
+			]
 		}
 	],
-	"peopleImages": ["/people1.png", "/people2.png", "/people3.png", "/people4.png", "/people5.png", "/people6.png"]
+	"peopleImages": [
+		"/people1.png",
+		"/people2.png",
+		"/people3.png",
+		"/people4.png",
+		"/people5.png",
+		"/people6.png"
+	]
 }
