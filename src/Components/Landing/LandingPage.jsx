@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
 import MoodSect from "./MoodSect";
 import ThingsSect from "./ThingsSect";
 import UseSect from "./UseSect";
 import ChillingSect from "./ChillingSect/ChillingSect";
 import PeopleSect from "./PeopleSect";
 
-export default function HomePage() {
+export default function LandingPage() {
 	return (
 		<section>
 			<div className="max-w-[1440px] mx-auto">

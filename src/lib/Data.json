@@ -57,6 +57,46 @@
 			"path": "contact"
 		}
 	],
+	"Location": [
+		"Bandarban",
+		"Chattogram",
+		"Cox's Bazar",
+		"Dhaka",
+		"Feni",
+		"Khulna",
+		"Kuakata",
+		"Mymensingh",
+		"Rajshahi",
+		"Rangamati",
+		"Rangpur",
+		"Sylhet"
+	],
+	"Activities": [
+		"Ahsan Manzil",
+		"Cox's Bazar Beach",
+		"Feni Buddhist Temple",
+		"Feni Central Mosque",
+		"Jaflong",
+		"Kantajew Temple",
+		"Kaptai Lake",
+		"Kuakata Sea Beach",
+		"Lalbag Fort",
+		"Lawachara National Park",
+		"Mahasthangarh",
+		"Muhuri Project Dam",
+		"Nafakhum Waterfall",
+		"Night Clubs",
+		"Nilgiri Hills",
+		"Paharpur Buddhist Monastery",
+		"Rajgonj Lake",
+		"Ratargul Swamp Forest",
+		"Saint Martin Island",
+		"Sajek Valley",
+		"Sixty Dome Mosque",
+		"Sonargaon Folk Art Museum",
+		"Srimangal Tea Gardens",
+		"Sundarbans Mangrove Forest"
+	],
 	"MoodImage": [
 		{
 			"img": "/mood1.png",
@@ -155,47 +195,47 @@
 		},
 		{
 			"img": "/chilling2.png",
-			"title": "Wizkid made in lagos tour",
-			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+			"title": "Davido's A Better Time Concert",
+			"des": "Experience an unforgettable night of afrobeats as Davido takes the stage for his biggest show yet. Join thousands of fans for an electric atmosphere filled with hit songs and special guest performances.",
 			"pDetails": [
 				{
 					"img": "/calender.svg",
-					"title": "Jun 12 2025"
+					"title": "Aug 15 2025"
 				},
 				{
 					"img": "/location.svg",
-					"title": "TBS Lagos"
+					"title": "Eko Atlantic City"
 				},
 				{
 					"img": "/clock.svg",
-					"title": "9:00 PM"
+					"title": "8:30 PM"
 				},
 				{
 					"img": "/price.svg",
-					"title": "N20,000"
+					"title": "N25,000"
 				}
 			]
 		},
 		{
 			"img": "/chilling3.png",
-			"title": "Wizkid made in lagos tour",
-			"des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+			"title": "Burna Boy's African Giant Tour",
+			"des": "Get ready for an epic musical journey as Grammy-winner Burna Boy brings his African Giant Tour to Lagos. Featuring his signature blend of afro-fusion music and spectacular stage production.",
 			"pDetails": [
 				{
 					"img": "/calender.svg",
-					"title": "Jun 12 2025"
+					"title": "Oct 30 2025"
 				},
 				{
 					"img": "/location.svg",
-					"title": "TBS Lagos"
+					"title": "Landmark Beach"
 				},
 				{
 					"img": "/clock.svg",
-					"title": "9:00 PM"
+					"title": "7:30 PM"
 				},
 				{
 					"img": "/price.svg",
-					"title": "N20,000"
+					"title": "N35,000"
 				}
 			]
 		}

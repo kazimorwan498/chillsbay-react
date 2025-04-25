@@ -15,7 +15,7 @@
 }
 
 .slick-arrow {
-	@apply before:!text-black before:!font-RedHat !size-[45px] !hidden sm:!block;
+	@apply before:!text-black before:!font-RedHat !size-[45px] !hidden sm:!block lg:!top-[42%];
 }
 
 .slick-prev::before {

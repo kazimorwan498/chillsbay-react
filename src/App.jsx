@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyNavbar from "./Components/Global/Navbar";
-import HomePage from "./Components/HomePage/HomePage";
+import LandingPage from "./Components/Landing/LandingPage";
 import ErrorPage from "./Components/Global/ErrorPage";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 		<BrowserRouter>
 			<MyNavbar />
 			<Routes>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/" element={<LandingPage />} />
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 		</BrowserRouter>

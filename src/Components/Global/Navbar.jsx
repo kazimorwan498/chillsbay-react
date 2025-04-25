@@ -24,13 +24,13 @@ import {
 import { Link as LinkRRD } from "react-router-dom";
 
 export default function MyNavbar() {
-	const [IsMenuOpen, setIsMenuOpen] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
 		<section className="h-[100px] flex py-2 max-w-[1440px] mx-auto">
 			<Navbar
 				shouldHideOnScroll
-				isMenuOpen={IsMenuOpen}
+				isMenuOpen={isMenuOpen}
 				onMenuOpenChange={setIsMenuOpen}
 				className="w-full"
 				maxWidth="2xl"
@@ -50,7 +50,7 @@ export default function MyNavbar() {
 
 				<NavbarContent className="900px:hidden sm:pr-3" justify="end">
 					<NavbarMenuToggle
-						aria-level={IsMenuOpen ? "Close menu" : "Open menu"}
+						aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 						className="cursor-pointer w-10 rounded-md"
 					/>
 				</NavbarContent>
@@ -94,51 +94,50 @@ export default function MyNavbar() {
 					</NavbarItem>
 
 					<NavbarItem>
-						<Link>
-							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
-								<DropdownTrigger>
-									<Link
-										variant="none"
-										className="cursor-pointer rounded-md text-accent !text-base space-x-2"
+						<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
+							<DropdownTrigger>
+								<div
+									variant="none"
+									className="flex items-center justify-center cursor-pointer rounded-md text-accent !text-base space-x-2"
+								>
+									<span>Things to do</span>
+									<svg
+										data-slot="icon"
+										fill="none"
+										strokeWidth={1.5}
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
+										aria-hidden="true"
+										className="size-4 stroke-primary"
 									>
-										<span>Things to do</span>
-										<svg
-											data-slot="icon"
-											fill="none"
-											strokeWidth={1.5}
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-											xmlns="http://www.w3.org/2000/svg"
-											aria-hidden="true"
-											className="size-4 stroke-primary"
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="m19.5 8.25-7.5 7.5-7.5-7.5"
+										/>
+									</svg>
+								</div>
+							</DropdownTrigger>
+							<DropdownMenu aria-label="Things to do">
+								{ThingsToDoItems.map(
+									({ items, path }, index) => (
+										<DropdownItem
+											className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+											key={index}
+											textValue={items}
 										>
-											<path
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												d="m19.5 8.25-7.5 7.5-7.5-7.5"
-											/>
-										</svg>
-									</Link>
-								</DropdownTrigger>
-								<DropdownMenu aria-label="Things to do">
-									{ThingsToDoItems.map(
-										({ items, path }, index) => (
-											<DropdownItem
-												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
-												key={index}
+											<LinkRRD
+												to={path}
+												className="block"
 											>
-												<LinkRRD
-													to={path}
-													className="block"
-												>
-													{items}
-												</LinkRRD>
-											</DropdownItem>
-										)
-									)}
-								</DropdownMenu>
-							</Dropdown>
-						</Link>
+												{items}
+											</LinkRRD>
+										</DropdownItem>
+									)
+								)}
+							</DropdownMenu>
+						</Dropdown>
 					</NavbarItem>
 
 					<NavbarItem className="cursor-pointer">
@@ -148,38 +147,29 @@ export default function MyNavbar() {
 					</NavbarItem>
 
 					<NavbarItem>
-						<Link>
-							<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
-								<DropdownTrigger>
-									<Link
-										variant="none"
-										className="cursor-pointer rounded-md !text-base space-x-2"
+						<Dropdown className="shadow-lg rounded-[4px] p-2 border border-accent/10 hover:border-secondary active:border-primary/30 transform-content">
+							<DropdownTrigger>
+								<Link
+									variant="none"
+									className="cursor-pointer rounded-md !text-base space-x-2"
+								>
+									<img src="/user.svg" alt="user" />
+									<span className="text-accent">Account</span>
+								</Link>
+							</DropdownTrigger>
+							<DropdownMenu aria-label="profile">
+								{AccountItems.map(({ items, path }, index) => (
+									<DropdownItem
+										className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
+										key={index}
 									>
-										<img src="/user.svg" alt="user" />
-										<span className="text-accent">
-											Account
-										</span>
-									</Link>
-								</DropdownTrigger>
-								<DropdownMenu aria-label="profile">
-									{AccountItems.map(
-										({ items, path }, index) => (
-											<DropdownItem
-												className="hover:!bg-secondary active:bg-primary/30 [&>*]:!text-base rounded-md transition-colors [&>*]:!font-medium"
-												key={index}
-											>
-												<LinkRRD
-													to={path}
-													className="block"
-												>
-													{items}
-												</LinkRRD>
-											</DropdownItem>
-										)
-									)}
-								</DropdownMenu>
-							</Dropdown>
-						</Link>
+										<LinkRRD to={path} className="block">
+											{items}
+										</LinkRRD>
+									</DropdownItem>
+								))}
+							</DropdownMenu>
+						</Dropdown>
 					</NavbarItem>
 
 					<NavbarItem>

@@ -19,11 +19,11 @@ export default function ChillingCarousel() {
 			<Slider {...settings} className="!relative">
 				{ChillingImages.map(({ img, title, des, pDetails }, index) => (
 					<div
-						className="!flex flex-col lg:flex-row lg:gap-[30px] max-w-[1027px] mx-auto"
+						className="!flex flex-col lg:flex-row lg:gap-[30px]  lg:max-w-[1027px] mx-auto"
 						key={index}
 					>
 						<img
-							className="rounded-[18px] 400px:max-w-[400px] md:max-w-[473px] mx-auto"
+							className="rounded-[18px] 400px:max-w-[400px] md:max-w-[473px] lg:max-w-max mx-auto"
 							src={img}
 							alt="chilling"
 						/>
@@ -31,7 +31,7 @@ export default function ChillingCarousel() {
 							<h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold xl:!leading-[54px]">
 								{title}
 							</h3>
-							<p className="text-base sm:text-lg lg:text-xl sm:leading-[30px] mt-2.5 md:mt-5">
+							<p className="text-base sm:text-lg lg:text-xl sm:leading-[30px] mt-2.5 md:mt-5 max-w-[400px] md:max-w-[473px] xl:max-w-[385px]">
 								{des}
 							</p>
 

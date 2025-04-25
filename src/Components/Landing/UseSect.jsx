@@ -13,7 +13,7 @@ export default function UseSect() {
 				{UseImages.map(({ img, title, des, desMaxWidth }, i) => (
 					<div
 						key={i}
-						className="flex flex-col items-center justify-center max-w-[360px]"
+						className="flex flex-col items-center justify-center max-w-[323px]"
 					>
 						<img
 							loading="lazy"
@@ -25,7 +25,7 @@ export default function UseSect() {
 							{title}
 						</MyHeading>
 						<p
-							className="mt-5 sm:leading-[34px] text-black text-lg sm:text-xl md:text-2xl text-center h-[120px]"
+							className="mt-5 md:leading-[34px] text-black text-lg sm:text-xl md:text-2xl text-center h-[120px]"
 							style={{ maxWidth: desMaxWidth }}
 						>
 							{des}
