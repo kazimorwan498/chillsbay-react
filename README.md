@@ -8,9 +8,7 @@
 
 Assalamu Alaikum, how are you? I hope you are well.
 
-I'm learning front-end wave development.  
-The project I created here is made up of HTML, CSS, Bootstrap, Tailwind CSS & JavaScript.  
-I got the template for this from somewhere else.
+I'm Frontend Developer.
 
 ## 🌐 Socials
 
@@ -21,37 +19,114 @@ I got the template for this from somewhere else.
 
 ## 💻 Project Languages
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23712cf9.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38bdf8?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![SASS](https://img.shields.io/badge/sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+React, Tailwind CSS, HeroUi, React-Slick
 
-## 📊 GitHub Stats
+## Installation
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=kazimorwan498&theme=transparent&hide_border=false&include_all_commits=false&count_private=false)
+Project setup by Vite
 
-![Current Steak](https://github-readme-streak-stats.herokuapp.com/?user=kazimorwan498&theme=transparent&hide_border=false)
+Step 1:
 
-![Most Used Language](https://github-readme-stats.vercel.app/api/top-langs/?username=kazimorwan498&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+```
+npm create vite@latest
+```
 
-## 🏆 GitHub Trophies
+Step 2:
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=kazimorwan498&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+```
+npm install
+```
 
-## ✍️ Random Dev Quote
+Step 3:
 
-![Random Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=merko)
+```
+cd your-project-name
+```
 
-## 🔝 Top Contributed Repo
+Step 4:
 
-![Top Contributed Repo](https://github-contributor-stats.vercel.app/api?username=kazimorwan498&limit=5&theme=github_dark&combine_all_yearly_contributions=true)
+```
+npm run dev
+```
 
----
-![Profile Views](https://komarev.com/ghpvc/?username=kazimorwan498&style=for-the-badge&color=293854)
+Now install Tailwind CSS
+
+- [Tailwind CSS](https://v3.tailwindcss.com/docs/guides/vite)
+    I uses Tailwind CSS v3.4.x for this project.
+
+Step 1:
+
+Install Tailwind CSS
+
+```
+npm install -D tailwindcss@3 postcss autoprefixer
+
+npx tailwindcss init -p
+```
+
+Step 2:
+
+Add the paths to all of your template files in your `tailwind.config.js` file.
+
+```
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Step 3:
+
+Add the Tailwind directives to your CSS
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Now install HeroUi
+
+- [HeroUI](https://www.heroui.com/docs/guide/installation)
+
+Step 1:
+
+Install Packages
+
+```
+npm install @heroui/react framer-motion
+```
+
+Step 2:
+
+Add the HeroUI CSS
+
+```
+// tailwind.config.js
+const {heroui} = require("@heroui/react");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+    // make sure it's pointing to the ROOT node_module
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  darkMode: "class",
+  plugins: [heroui()],
+};
+```
+
+### Project is ready to run
+
+Now go to your browser and visit this site ➡️ `localhost:5173`
