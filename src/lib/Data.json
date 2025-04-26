@@ -247,5 +247,31 @@
 		"/people4.png",
 		"/people5.png",
 		"/people6.png"
+	],
+	"footSocial": [
+		{
+			"img": "/facebook.svg",
+			"url": "https://www.facebook.com/"
+		},
+		{
+			"img": "/twitter.svg",
+			"url": "https://x.com/"
+		},
+		{
+			"img": "/instagram-outline.svg",
+			"url": "https://www.instagram.com/"
+		},
+		{
+			"img": "/linkedin.svg",
+			"url": "https://www.linkedin.com/"
+		},
+		{
+			"img": "/youtube.svg",
+			"url": "https://www.youtube.com/"
+		},
+		{
+			"img": "/tiktok.svg",
+			"url": "https://www.tiktok.com/"
+		}
 	]
 }

@@ -183,6 +183,7 @@ export default function MyNavbar() {
 					</NavbarItem>
 				</NavbarContent>
 
+				{/* For Small Screen Device */}
 				<NavbarMenu className="mt-7 bg-[rgb(245,250,255)]">
 					{MobileNavItems.map(({ items, path }, index) => (
 						<NavbarMenuItem key={index}>

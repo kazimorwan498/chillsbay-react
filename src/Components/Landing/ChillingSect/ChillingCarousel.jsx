@@ -12,7 +12,7 @@ export default function ChillingCarousel() {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// autoplay: true,
+		autoplay: true,
 	};
 	return (
 		<section className="xl:max-w-[1251px] mx-auto">
