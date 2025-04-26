@@ -12,22 +12,24 @@ export default function ChillingCarousel() {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
+		// autoplay: true,
 	};
 	return (
 		<section className="xl:max-w-[1251px] mx-auto">
 			<Slider {...settings} className="!relative">
 				{ChillingImages.map(({ img, title, des, pDetails }, index) => (
 					<div
-						className="!flex flex-col lg:flex-row lg:gap-[30px]  lg:max-w-[1027px] mx-auto"
+						className="!flex flex-col lg:flex-row lg:gap-[30px] lg:max-w-[1100px] mx-auto"
 						key={index}
 					>
-						<img
-							className="rounded-[18px] 400px:max-w-[400px] md:max-w-[473px] lg:max-w-max mx-auto"
-							src={img}
-							alt="chilling"
-						/>
-						<div className="pt-4 max-w-[400px] md:max-w-[473px] xl:max-w-[385px] mx-auto">
+						<div className="400px:max-w-[400px] md:max-w-[473px] xl:max-w-[612px] mx-auto lg:ms-auto">
+							<img
+								className="rounded-[18px] 400px:max-w-[400px] md:max-w-[473px] xl:max-w-[612px]"
+								src={img}
+								alt="chilling"
+							/>
+						</div>
+						<div className="pt-4 max-w-[400px] md:max-w-[473px] xl:max-w-[385px] mx-auto lg:me-auto">
 							<h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold xl:!leading-[54px]">
 								{title}
 							</h3>

@@ -4,7 +4,7 @@ import ChillingCarousel from "./ChillingCarousel";
 
 export default function ChillingSect() {
 	return (
-		<section className="pt-[60px] pb-[79px] px-2">
+		<section className="pt-12 sm:pt-[60px] pb-10 sm:pb-[79px] px-2">
 			<MyHeading className="pb-10">
 				See How People are Chilling On Chillsbay
 			</MyHeading>

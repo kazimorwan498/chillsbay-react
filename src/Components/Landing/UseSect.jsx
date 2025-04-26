@@ -17,15 +17,15 @@ export default function UseSect() {
 					>
 						<img
 							loading="lazy"
-							className="size-[128px] mb-4"
+							className="size-20 md:size-24 xl:size-[128px] mb-4"
 							src={img}
 							alt="Use"
 						/>
-						<MyHeading className="text-xl sm:text-2xl md:!text-[32px] max-w-[274px] last:max-w-[295px] first:!max-w-[258px] sm:leading-[38px] text-black">
+						<MyHeading className="text-xl sm:text-2xl md:text-[27px] lg:text-[30px] xl:!text-[32px] max-w-[274px] last:max-w-[295px] first:!max-w-[258px] sm:leading-[38px] text-black">
 							{title}
 						</MyHeading>
 						<p
-							className="mt-5 md:leading-[34px] text-black text-lg sm:text-xl md:text-2xl text-center h-[120px]"
+							className="mt-5 lg:leading-[34px] text-black text-base sm:text-lg md:text-xl lg:text-2xl text-center h-[120px]"
 							style={{ maxWidth: desMaxWidth }}
 						>
 							{des}
