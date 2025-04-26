@@ -117,18 +117,6 @@
 	],
 	"ThingsImages": [
 		{
-			"img": "/things1.png",
-			"title": "Sight Seeing"
-		},
-		{
-			"img": "/things2.png",
-			"title": "Volley Ball Game"
-		},
-		{
-			"img": "/things3.png",
-			"title": "Wizkid Show"
-		},
-		{
 			"img": "/things3.png",
 			"title": "Wizkid Show"
 		},
@@ -137,12 +125,24 @@
 			"title": "Sight Seeing"
 		},
 		{
+			"img": "/things3.png",
+			"title": "Wizkid Show"
+		},
+		{
 			"img": "/things2.png",
 			"title": "Volley Ball Game"
 		},
 		{
+			"img": "/things1.png",
+			"title": "Sight Seeing"
+		},
+		{
 			"img": "/things3.png",
 			"title": "Wizkid Show"
+		},
+		{
+			"img": "/things2.png",
+			"title": "Volley Ball Game"
 		},
 		{
 			"img": "/things3.png",

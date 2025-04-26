@@ -41,6 +41,18 @@
 
 .slick-dots {
 	@apply !mt-5 sm:!mt-10 !static;
+
+	&:nth-child(2) {
+		@apply !mt-2.5;
+
+		& li {
+			@apply !mx-1;
+		}
+
+		& li button:before {
+			@apply !size-2 sm:!size-3;
+		}
+	}
 }
 
 .slick-dots li button:before {
