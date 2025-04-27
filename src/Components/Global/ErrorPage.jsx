@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function ErrorPage() {
 	return (
 		<>
-			<div className="flex flex-col items-center justify-center h-[85dvh] text-accent font-Montserrat">
+			<div className="flex flex-col items-center justify-center h-[85dvh] text-accent dark:text-white font-Montserrat">
 				<span className="text-sm sm:text-base md:text-xl uppercase text-center font-semibold">
 					oops! page not found, {""}
 					<Link

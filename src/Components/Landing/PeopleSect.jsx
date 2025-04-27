@@ -11,6 +11,7 @@ export default function PeopleSect() {
 		swipeToSlide: true,
 		arrows: false,
 		dots: true,
+		autoplay: true,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -53,10 +54,7 @@ export default function PeopleSect() {
 			</h3>
 
 			<div className="slider-container">
-				<Slider
-					{...settings}
-					className="flex justify-center sm:justify-start !w-full !max-w-[1258px] overflow-y-auto"
-				>
+				<Slider {...settings} className="!w-full !max-w-[1258px]">
 					{peopleImages.map((item, index) => (
 						<img
 							className="w-[207px] h-[200px]"

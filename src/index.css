@@ -55,6 +55,11 @@
 	}
 }
 
+.slick-dots li,
+.slick-dots li button {
+	@apply !size-3 sm:!size-4 !p-0;
+}
+
 .slick-dots li button:before {
 	content: "" !important;
 	@apply !size-3 sm:!size-4 !bg-accent rounded-full hover:!opacity-75 !opacity-50;

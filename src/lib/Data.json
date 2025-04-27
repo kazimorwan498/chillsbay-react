@@ -57,6 +57,12 @@
 			"path": "contact"
 		}
 	],
+	"HeroCarousel": [
+		"/hero-1.png",
+		"/hero-2.png",
+		"/hero-3.png",
+		"/hero-4.png"
+	],
 	"Location": [
 		"Bandarban",
 		"Chattogram",
@@ -272,6 +278,35 @@
 		{
 			"img": "/tiktok.svg",
 			"url": "https://www.tiktok.com/"
+		}
+	],
+	"footSocialNav": [
+		{
+			"head": "Menu",
+			"items": [
+				"Home",
+				"Eat",
+				"Drink",
+				"Events",
+				"Club",
+				"Recreation",
+				"Blog",
+				"Careers",
+				"Contact",
+				"FAQs"
+			]
+		},
+		{
+			"head": "Menu",
+			"items": [
+				"Start Here",
+				"Pay with Crypto",
+				"Style Guide",
+				"Password Protected",
+				"404 Not Found",
+				"Licenses",
+				"Changelog"
+			]
 		}
 	]
 }

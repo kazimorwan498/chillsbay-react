@@ -13,7 +13,7 @@ export default function FootLogos() {
 			{/* Footer Social Media Links */}
 			<div className="flex items-center gap-5 mt-6">
 				{footSocial.map(({ img, url }, index) => (
-					<Link to={url} key={index} className="size-5 flex items-center justify-center !p-0">
+					<Link to={url} target="__blank" key={index} className="size-5 flex items-center justify-center !p-0">
 						<img src={img} alt="" />
 					</Link>
 				))}
